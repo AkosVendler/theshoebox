@@ -38,8 +38,8 @@ function next1(){
 }
 
 //kosár
-var asd = 47421
-var asd2 = 51459
+var NikeAirForce1 = 47421
+var AirJordan1Mid = 51459
 meret = document.getElementById("meretlist").value;
 
 function hozzáad(cucc) {
