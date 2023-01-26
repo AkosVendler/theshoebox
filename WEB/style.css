@@ -7,6 +7,12 @@
     --color-black-1: #212b38;
   }
   
+    html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
   * {
     margin: 0;
     padding: 0;
