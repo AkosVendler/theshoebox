@@ -1,0 +1,73 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dropdown Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="StyleFooter.css">
+    <link rel="stylesheet" href="search.css">
+  </head>
+  <body>
+    <div class="menu-bar">
+    <h1 class="logo">TheShoe<span>Box</span></h1>
+      <!--------------------------------LOgo----------------->
+      <div class="asd">
+        <ul>
+        
+          <li><a href="#">Nike <i class="fa-solid fa-sort-down"></i></a>
+              <div class="dropdown-menu">
+                  <ul>
+                    <li><a href="#">Air force 1</a></li>
+                    <li><a href="#">Jorden 4</a></li>
+                    <li>
+                      <a href="#">Jordan 1 <i class="fa-solid fa-caret-right"></i></a>
+        
+                      <div class="dropdown-menu-1">
+                        <ul>
+                          <li><a href="#">High</a></li>
+                          <li><a href="#">Mid</a></li>
+                          <li><a href="#">Low</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            <!------------------------Yeezy------------------------------->
+            <li><a href="#">Yeezy <i class="fa-solid fa-sort-down"></i></a>
+              <div class="dropdown-menu">
+                <ul>
+                  <li><a href="#">Slide</a></li>
+                  <li><a href="#">Foam Runner</a></li>
+              </div>
+           <!------------------------Yeezy------------------------------------->
+           
+            </ul>
+            <div class="icons">
+             <div class="search">
+              <input type="search" class="keres-input" id="keres" placeholder="  Keresés.....">
+              <button onclick="myFunction()"><i id="icon" class="fa-solid fa-magnifying-glass"></i></button>
+             </div>
+             <a href="./login.html" id="user"><i id="icon" class="fa-solid fa-user"></i></a>
+             <i id="icon" class="fa-solid fa-bag-shopping"></i>
+           </div>
+          </div>
+      </div>
+<!---------------------------------------Footer------------------------------------->
+<!------------------------------JS Kereső------------------------------->
+<script>
+function myFunction() {
+  var x = document.getElementById("keres");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+<!------------------------------JS Kereső Vége------------------------------->
+
+    </div>
+  </body>
+</html>
