@@ -40,7 +40,6 @@ function next1(){
 //kosár
 var NikeAirForce1 = 47421
 var AirJordan1Mid = 51459
-meret = document.getElementById("meretlist").value;
 
 function hozzáad(cucc) {
     
