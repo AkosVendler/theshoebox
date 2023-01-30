@@ -209,6 +209,10 @@ body{
     transition: ease-in-out 0.15s;
 }
 
+s{
+    text-decoration: line-through;
+    color: red;
+}
 
 .product-cards {
     display: flex;
@@ -220,7 +224,7 @@ body{
     margin-top: 100px;
     display: inline-block;
     border-radius: 14px;
-    height: 450px;
+    height: 500px;
     width: 300px;
     background: #252525;
     padding: 10px;
