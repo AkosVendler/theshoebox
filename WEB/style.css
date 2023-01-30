@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
 
 body{
-    background-color: #c5c5c5;
+    background: url(./img/hatter.svg);
     font-family: Poppins;
+    background-repeat: no-repeat;
+    background-size:cover;
 }
 
 /*Nav*/
@@ -25,10 +27,9 @@ body{
 }
 
 .navbar a {
-    color: #fff;
     font-size: 30px;
     font-weight: 700;
-    color: #252525;
+    color: #F3EFE0;
 }
 
 .nav-links ul a:hover {
@@ -42,7 +43,7 @@ body{
     padding-left: 30px;
 }
 .navbar .logo span {
-    color: #0081C9;
+    color: #22A39F;
 
 }
 
@@ -200,6 +201,7 @@ body{
 
 .reklam #reklam {
     width: 80%;
+    box-shadow: 4px 11px 24px 11px rgba(37,37,37,0.38);
 }
 
 .reklam #reklam:hover {
@@ -224,6 +226,7 @@ body{
     padding: 10px;
     margin-right: 20px;
     margin-bottom: 30px;
+    box-shadow: 4px 11px 24px 11px rgba(37,37,37,0.38);
 }
 
 .slider {
@@ -246,7 +249,7 @@ img {
 
 #icon {
     font-size: xx-large;
-    color: #252525;
+    color: #F3EFE0;
 }
 
 #icons {
@@ -305,7 +308,7 @@ img {
 .btn:hover {
     height: 45px;
     transition: ease-out 0.05s;
-    color: rgb(0, 0, 0);
+    color: #22A39F;
 }
 
 .meret{
