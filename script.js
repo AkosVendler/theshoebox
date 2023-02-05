@@ -38,8 +38,8 @@ function next1(){
 }
 
 //kosár
-var NikeAirForce1 = 47421
-var AirJordan1Mid = 51459
+var NikeAirForce1 = 47500
+var AirJordan1Mid = 50000
 
 function hozzáad(cucc) {
     
