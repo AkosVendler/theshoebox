@@ -12,11 +12,11 @@
 <body onload="kos()">
 
     <nav class="navbar">
-        <a href="#" class="logo">TheShoe<span>Box</span></a>
+        <a href="./index.html" class="logo">TheShoe<span>Box</span></a>
         <div class="nav-links">
             <ul>
                 <li><a href="./Jordan.html">Jordan</a></li>
-                <li><a href="#">Air Force</a></li>
+                <li><a href="./AF.html">Air Force</a></li>
                 <li><a href="./yeezy.html">Yeezy</a></li>
                     <div class="search">
                      <input type="search" class="keres-input" id="keres" placeholder="  Keresés.....">
@@ -107,6 +107,99 @@
                 <div class="megvesz"><button onclick="hozzáad('NikeAirForce1')" class="btn"><p>Megveszem</p></button></div>
         
         </div>
+
+        <div class="container" id="ferfi">
+            <div class="card">
+                <div class="slider">
+                    <button id="arrow" onclick="prev2()">
+                        <i id="icons" class="fa-solid fa-angle-left"></i>
+                    </button>
+                    <div class="img">
+                        <img class="slider-img2" src="./img/KUKI.png">
+                    </div>
+                    <button id="arrow" onclick="next2()">
+                        <i id="icons" class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div>
+                <div class="tag"><h1>Nike Air Max 270</h1></div>
+                <br>
+                <div class="meret">
+                    <select id="meretlist" onchange="getSelectValue();">
+                        <option value="42">42</option>
+                        <option value="43,5">43,5</option>
+                        <option value="45">45</option>
+                        <option value="47">47</option>
+                        <option value="47,5">47,5</option>
+                    </select>
+                </div>
+                <br>
+                </div>
+                <script>
+                    function getSelectValue(){
+                        var selectedValue = document.getElementById("list");
+                        console.log(selectedValue);
+                    }
+                    </script>
+                <div class="price">
+                    <s><h2>62 000 Ft</h2></s> <h2>58 500 Ft</h2>
+                </div>
+                <br>
+                <div class="megvesz"><button onclick="hozzáad('NikeAirMax270')" class="btn"><p>Megveszem</p></button></div>
+        
+        </div>
+
+        <div class="container" id="ferfi">
+            <div class="card">
+                <div class="slider">
+                    <button id="arrow" onclick="prev3()">
+                        <i id="icons" class="fa-solid fa-angle-left"></i>
+                    </button>
+                    <div class="img">
+                        <img class="slider-img3" src="./img/Főkép.png">
+                    </div>
+                    <button id="arrow" onclick="next3()">
+                        <i id="icons" class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div>
+                <div class="tag"><h1>Nike Air Force</h1></div>
+                <br>
+                <div class="meret">
+                    <select id="meretlist" onchange="getSelectValue();">
+                        <option value="42">42</option>
+                        <option value="43,5">43,5</option>
+                        <option value="45">45</option>
+                        <option value="47">47</option>
+                        <option value="47,5">47,5</option>
+                    </select>
+                </div>
+                <br>
+                </div>
+                <script>
+                    function getSelectValue(){
+                        var selectedValue = document.getElementById("list");
+                        console.log(selectedValue);
+                    }
+                    </script>
+                <div class="price">
+                    <s><h2>50 000 Ft</h2></s> <h2>45 500 Ft</h2>
+                </div>
+                <br>
+                <div class="megvesz"><button onclick="hozzáad('NikeAirForceBlueGray')" class="btn"><p>Megveszem</p></button></div>
+        
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
         
         <div class="container" id="noi">
             <div class="card">
