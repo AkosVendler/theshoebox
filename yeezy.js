@@ -129,8 +129,10 @@ function setImg6(){
     return slider_img6.setAttribute('src', 'img/' + img6[i]);
 }
 //kosár
-var NikeAirForce1 = 47421
-var AirJordan1Mid = 51459
+var NikeAirForce1 = 47500
+var AirJordan1Mid = 50000
+var NikeAirMax270 = 58500
+var NikeAirForceBlueGray =45500
 var YeezySlideOnyx = 49500
 var YeezySlideGlowGreen = 65000
 var YeezyFoamRNNRSand = 93000
@@ -138,6 +140,13 @@ var YeezyFoamRNNRRed = 142000
 var YeezyBoost350V2BlackRed = 158000
 var YeezyBoost350V2DazzlingBlue = 120000
 var YeezyBoost350V2Oreo = 165000
+var AirJordan1Low = 49500
+var AirJordan1MidDiamond = 120000
+var AirJordan1Mid = 93000
+var AirJordan11CMFTLow = 70000
+var AirJordan1LowSE = 60000
+var JordanAccess = 30000
+var Zion2 = 65000
 
 function hozzáad(cucc) {
     
