@@ -17,14 +17,16 @@ body{
     list-style: none;
 }
 
+
 .navbar {
-    position: absolute;
+    position: fixed;
     padding: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     box-sizing: border-box;
+    background: #25252533;
 }
 
 .navbar a {
@@ -48,9 +50,12 @@ body{
 
 }
 
+
 .navbar .nav-links ul {
     display: flex;
     padding-right: 30px;
+    justify-content: center;
+    align-items: center;
 }
 
 .navbar .nav-links ul li {
@@ -141,7 +146,9 @@ body{
         margin-left: 0;
         margin-bottom: 20px;
     }
-
+    #no-margin {
+        margin-left: 0px;
+    }
 }
 
 .keres-input {
@@ -624,6 +631,9 @@ img {
     padding-right: 150px;
 }
 
+#container-active {
+    display: none;
+}
 
 @media only screen and (max-width: 500px) {
     .footer-container {
@@ -649,4 +659,42 @@ img {
     .footer-img {
         width: 40%;
     }
+}
+
+
+/*szűrő*/
+
+.szuro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 30px;
+}
+
+.szuro p {
+    padding-right: 20px;
+    font-size: 20px;
+    color: #F3EFE0;
+}
+
+.szuro #box input {
+    height: 30px;
+}
+
+#input {
+    margin-right: 10px;
+}
+
+#box {
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    display: none;
+}
+
+#szuro {
+    background: none;
+    border:none;
 }
