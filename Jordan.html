@@ -4,21 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TheShoeBox</title>
-    <link rel="stylesheet" href="style.css">
+    <title>TheShoeBox | Yeezy</title>
+    <link rel="stylesheet" href="./jordan.css">
     <link rel="icon" type="image/png" href="./img/logo.png"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <link rel="stylesheet" href="./jordan.css">
-    
-    
 </head>
 <body onload="kos()">
     <nav class="navbar">
         <a href="./index.html" class="logo">TheShoe<span>Box</span></a>
         <div class="nav-links">
             <ul>
-                
-                <li><a href="#">Air Force</a></li>
+                <li><a href="./Jordan.html">Jordan</a></li>
+                <li><a href="./AF.html">Air Force</a></li>
                 <li><a href="./yeezy.html">Yeezy</a></li>
                     <div class="search">
                      <input type="search" class="keres-input" id="keres" placeholder="  Keresés.....">
@@ -26,140 +23,409 @@
                     </div>
                     <a href="./login.html" id="user"><i id="icon" class="fa-solid fa-user"></i></a>
                     <button id="myBtn" onclick="kos()"><i id="icon" class="fa-solid fa-bag-shopping"></i></button>
-            </ul>
-            <!-----------Keresés--------------->
-            <i id="hamburger" class="fa-solid fa-bars"></i>
+                    
+                    <div class="szuro" id="no-margin">
+                        <div id="box" >
+                                <p>Női</p>
+                                <input id="input" type="checkbox" onclick="noi()">
+                                <p>Férfi</p>
+                                <input type="checkbox" onclick="ferfi()">
+                        </div>
+                        <button id="szuro" onclick="filter()"><i id="icon" class="fa-solid fa-filter"></i></button>
+                    </div>
+                </ul>
+           
+           
+        </div>
+        <i id="hamburger" class="fa-solid fa-bars"></i>
 
-            <script>
-                const menuHamburger = document.querySelector("#hamburger")
-                const navLinks = document.querySelector(".nav-links")
-    
-                menuHamburger.addEventListener('click',()=>{
-                    navLinks.classList.toggle('mobile-menu')
-                })
-    
-                function myFunction() {
-                    var x = document.getElementById("keres");
-                    if (x.style.display === "none") {
-                    x.style.display = "flex";
-                    } else {
-                        x.style.display = "none";
-                }
-                }
-    
-            </script>
-       </div>
-    </nav>
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
+        <script>
+            const menuHamburger = document.querySelector("#hamburger")
+            const navLinks = document.querySelector(".nav-links")
 
-            <!-- Modal content -->
-            <div class="modal-content">
-              <span class="close">&times;</span>
-          <div class="container1">
-            <div class="table">
-                <table class="tabla">
-                    <h1 onclick="kos()">Kosár</h1>
-            <table id="tabla">
-              <tbody>
-                <!--<tr style="font-size: 25px;">
-                  <th style="width: 450px;">Termék</th>
-                  <th style="width: 450px;">Mennyiség</th>
-                  <th style="width: 450px;">Ár</th>
-                </tr>
-                <tr style="font-size: 20px;">
-                  <th style="width: 450px;">Fizetendő</th>
-                  <th style="width: 450px;"> </th>
-                  <th style="width: 450px;">0 Ft</th>
-                </tr>-->
-              </tbody>
-            </table>
-            <div class="torles"><button class="fizet"><a style="text-decoration: none; color: white;" href="./fizetes/index.html">Tovább a fizetéshez</a></button><button class="törlés" onclick="torles()">Kosár ürítése</button></div>          
-            </div>
-            
-            
-            </div>
-            
-            </div>
-          
-          </div>
-          
-          <script>
-          // Get the modal
-          var modal = document.getElementById("myModal");
-          
-          // Get the button that opens the modal
-          var btn = document.getElementById("myBtn");
-          
-          // Get the <span> element that closes the modal
-          var span = document.getElementsByClassName("close")[0];
-          
-          // When the user clicks the button, open the modal 
-          btn.onclick = function() {
-            modal.style.display = "block";
-          }
-          
-          // When the user clicks on <span> (x), close the modal
-          span.onclick = function() {
-            modal.style.display = "none";
-          }
-          
-          // When the user clicks anywhere outside of the modal, close it
-          window.onclick = function(event) {
-            if (event.target == modal) {
-              modal.style.display = "none";
+            menuHamburger.addEventListener('click',()=>{
+                navLinks.classList.toggle('mobile-menu')
+            })
+
+            function myFunction() {
+                var x = document.getElementById("keres");
+                if (x.style.display === "none") {
+                x.style.display = "flex";
+                } else {
+                    x.style.display = "none";
             }
-          }
-          </script>
-            </div>
-            <script src="./script.js"></script>
+            }
 
+        </script>
+    </nav>
 
-     <!--Jordan kereses-->
-     <div class="featured-content">
-        <div class="row">
-            <img src="img/jordan4valaszt.png">
-            <div class="fea-text">
-                <h5>jordan 1 Low</h5>
-            </div>
-            <div class="arrow">
-                <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
-            </div>
+    <div class="product-cards">
+        <div class="container" id="noi">
+            <div class="card">
+                <div class="slider">
+                    <button id="arrow" onclick="prev()">
+                        <i id="icons" class="fa-solid fa-angle-left"></i>
+                    </button>
+                    <div class="img">
+                        <img class="slider-img" src="./img/low0.png">
+                    </div>
+                    <button id="arrow" onclick="next()">
+                        <i id="icons" class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div>
+                <div class="tag"><h1>Air Jordan 1 Low</h1></div>
+                <br>
+                
+                
+                <div class="meret">
+                    <select id="meretlist" onchange="getSelectValue();">
+                        <option value="42">42</option>
+                        <option value="43,5">43,5</option>
+                        <option value="45">45</option>
+                        <option value="47">47</option>
+                        <option value="47,5">47,5</option>
+                    </select>
+                </div>
+                <br>
+                </div>
+                <script>
+                    function getSelectValue(){
+                        var selectedValue = document.getElementById("list");
+                        console.log(selectedValue);
+                    }
+                    </script>
+                <div class="price">
+                    <h2>49 500 Ft</h2>
+                </div>
+                <br>
+                <div class="megvesz"><button onclick="hozzáad('AirJordan1Low')" class="btn"><p>Megveszem</p></button></div>
+                
         </div>
-
-        <div class="row">
-            <img src="img/jordan4valaszt.png">
-            <div class="fea-text">
-                <h5>jordan 1 Mid</h5>
-            </div>
-            <div class="arrow">
-                <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
-            </div>
+        <div class="container" id="ferfi">
+            <div class="card">
+                <div class="slider">
+                    <button id="arrow" onclick="prev1()">
+                        <i id="icons" class="fa-solid fa-angle-left"></i>
+                    </button>
+                    <div class="img">
+                        <img class="slider-img1" src="./img/diamond1.png">
+                    </div>
+                    <button id="arrow" onclick="next1()">
+                        <i id="icons" class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div>
+                <div class="tag"><h1>Air Jordan 1 Mid</h1></div>
+                <br>
+                <div class="meret">
+                    <select id="meretlist" onchange="getSelectValue();">
+                        <option value="42">42</option>
+                        <option value="43,5">43,5</option>
+                        <option value="45">45</option>
+                        <option value="47">47</option>
+                        <option value="47,5">47,5</option>
+                    </select>
+                </div>
+                <br>
+                </div>
+                <script>
+                    function getSelectValue(){
+                        var selectedValue = document.getElementById("list");
+                        console.log(selectedValue);
+                    }
+                    </script>
+                <div class="price">
+                    <h2>120 000 Ft</h2>
+                </div>
+                <br>
+                <div class="megvesz"><button onclick="hozzáad('AirJordan1MidDiamond')" class="btn"><p>Megveszem</p></button></div>
+                
         </div>
-
-        <div class="row">
-            <img src="img/jordan4valaszt.png">
-            <div class="fea-text">
-                <h5>jordan 1 High</h5>
-            </div>
-            <div class="arrow">
-                <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
-            </div>
+        <div class="container" id="ferfi">
+            <div class="card">
+                <div class="slider">
+                    <button id="arrow" onclick="prev2()">
+                        <i id="icons" class="fa-solid fa-angle-left"></i>
+                    </button>
+                    <div class="img">
+                        <img class="slider-img2" src="./img/Jordan.png">
+                    </div>
+                    <button id="arrow" onclick="next2()">
+                        <i id="icons" class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div>
+                <div class="tag"><h1>Air Jordan 1 Mid</h1></div>
+                <br>
+                <div class="meret">
+                    <select id="meretlist" onchange="getSelectValue();">
+                        <option value="42">42</option>
+                        <option value="43,5">43,5</option>
+                        <option value="45">45</option>
+                        <option value="47">47</option>
+                        <option value="47,5">47,5</option>
+                    </select>
+                </div>
+                <br>
+                </div>
+                <script>
+                    function getSelectValue(){
+                        var selectedValue = document.getElementById("list");
+                        console.log(selectedValue);
+                    }
+                    </script>
+                <div class="price">
+                    <h2>93 000 Ft</h2>
+                </div>
+                <br>
+                <div class="megvesz"><button onclick="hozzáad('AirJordan1Mid')" class="btn"><p>Megveszem</p></button></div>
+                
         </div>
-
-        <div class="row">
-            <img src="img/jordan4valaszt.png">
-            <div class="fea-text">
-                <h5>Jordan 4</h5>
-            </div>
-            <div class="arrow">
-                <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
-            </div>
+        <div class="container" id="noi">
+            <div class="card">
+                <div class="slider">
+                    <button id="arrow" onclick="prev3()">
+                        <i id="icons" class="fa-solid fa-angle-left"></i>
+                    </button>
+                    <div class="img">
+                        <img class="slider-img3" src="./img/j1.png">
+                    </div>
+                    <button id="arrow" onclick="next3()">
+                        <i id="icons" class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div>
+                <div class="tag"><h1>Air Jordan 11 CMFT Low</h1></div>
+                <br>
+                
+                <div class="meret">
+                    <select id="meretlist" onchange="getSelectValue();">
+                        <option value="42">42</option>
+                        <option value="43,5">43,5</option>
+                        <option value="45">45</option>
+                        <option value="47">47</option>
+                        <option value="47,5">47,5</option>
+                    </select>
+                </div>
+                <br>
+                </div>
+                <script>
+                    function getSelectValue(){
+                        var selectedValue = document.getElementById("list");
+                        console.log(selectedValue);
+                    }
+                    </script>
+                <div class="price">
+                    <h2>70 000 Ft</h2>
+                </div>
+                <br>
+                <div class="megvesz"><button onclick="hozzáad('AirJordan11CMFTLow')" class="btn"><p>Megveszem</p></button></div>
+                
         </div>
-
+        <div class="container" id="ferfi">
+            <div class="card">
+                <div class="slider">
+                    <button id="arrow" onclick="prev4()">
+                        <i id="icons" class="fa-solid fa-angle-left"></i>
+                    </button>
+                    <div class="img">
+                        <img class="slider-img4" src="./img/se1.png">
+                    </div>
+                    <button id="arrow" onclick="next4()">
+                        <i id="icons" class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div>
+                <div class="tag"><h1>Air Jordan 1 Low SE</h1></div>
+                <br>
+                <div class="meret">
+                    <select id="meretlist" onchange="getSelectValue();">
+                        <option value="42">42</option>
+                        <option value="43,5">43,5</option>
+                        <option value="45">45</option>
+                        <option value="47">47</option>
+                        <option value="47,5">47,5</option>
+                    </select>
+                </div>
+                <br>
+                </div>
+                <script>
+                    function getSelectValue(){
+                        var selectedValue = document.getElementById("list");
+                        console.log(selectedValue);
+                    }
+                    </script>
+                <div class="price">
+                    <h2>60 000 Ft</h2>
+                </div>
+                <br>
+                <div class="megvesz"><button onclick="hozzáad('AirJordan1LowSE')" class="btn"><p>Megveszem</p></button></div>
+                
+        </div>
+        <div class="container" id="ferfi">
+            <div class="card">
+                <div class="slider">
+                    <button id="arrow" onclick="prev5()">
+                        <i id="icons" class="fa-solid fa-angle-left"></i>
+                    </button>
+                    <div class="img">
+                        <img class="slider-img5" src="./img/ac1.png">
+                    </div>
+                    <button id="arrow" onclick="next5()">
+                        <i id="icons" class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div>
+                <div class="tag"><h1>Jordan Access</h1></div>
+                <br>
+                <br>
+                <br>
+                <div class="meret">
+                    <select id="meretlist" onchange="getSelectValue();">
+                        <option value="42">42</option>
+                        <option value="43,5">43,5</option>
+                        <option value="45">45</option>
+                        <option value="47">47</option>
+                        <option value="47,5">47,5</option>
+                    </select>
+                </div>
+                <br>
+                </div>
+                <script>
+                    function getSelectValue(){
+                        var selectedValue = document.getElementById("list");
+                        console.log(selectedValue);
+                    }
+                    </script>
+                <div class="price">
+                    <h2>30 000 Ft</h2>
+                    
+                </div>
+                <br>
+                <div class="megvesz"><button onclick="hozzáad('JordanAccess')" class="btn"><p>Megveszem</p></button></div>
+                
+        </div>
+        <div class="container" id="ferfi">
+            <div class="card">
+                <div class="slider">
+                    <button id="arrow" onclick="prev6()">
+                        <i id="icons" class="fa-solid fa-angle-left"></i>
+                    </button>
+                    <div class="img">
+                        <img class="slider-img6" src="./img/zi1.png">
+                    </div>
+                    <button id="arrow" onclick="next6()">
+                        <i id="icons" class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div>
+                <div class="tag"><h1>Zion 2</h1></div>
+                <br>
+                <div class="meret">
+                    <select id="meretlist" onchange="getSelectValue();">
+                        <option value="42">42</option>
+                        <option value="43,5">43,5</option>
+                        <option value="45">45</option>
+                        <option value="47">47</option>
+                        <option value="47,5">47,5</option>
+                    </select>
+                </div>
+                <br>
+                </div>
+                <script>
+                    function getSelectValue(){
+                        var selectedValue = document.getElementById("list");
+                        console.log(selectedValue);
+                    }
+                    </script>
+                <div class="price">
+                    <h2>65 000 Ft</h2>
+                </div>
+                <br>
+                <div class="megvesz"><button onclick="hozzáad('Zion2')" class="btn"><p>Megveszem</p></button></div>
+                
+        </div>                                                                                                                
     </div>
-</section>       
+        
+        <!-- The Modal -->
+<div id="myModal" class="modal">
 
-
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+  <div class="container1">
+    <div class="table">
+        <table class="tabla">
+            <h1 onclick="kos()">Kosár</h1>
+    <table id="tabla">
+      <tbody>
+        <!--<tr style="font-size: 25px;">
+          <th style="width: 450px;">Termék</th>
+          <th style="width: 450px;">Mennyiség</th>
+          <th style="width: 450px;">Ár</th>
+        </tr>
+        <tr style="font-size: 20px;">
+          <th style="width: 450px;">Fizetendő</th>
+          <th style="width: 450px;"> </th>
+          <th style="width: 450px;">0 Ft</th>
+        </tr>-->
+      </tbody>
+    </table>
+    <div class="torles"><button class="fizet"><a style="text-decoration: none; color: white;" href="./fizet.html">Tovább a fizetéshez</a></button><button class="törlés" onclick="torles()">Kosár ürítése</button></div>          
+    </div>
+    
+    
+    </div>
+    
+    </div>
+  
+  </div>
+  <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+      </div>
+      <footer>
+          <div class="footer-container">
+              <img class="footer-img" src="./img/logo.png">
+              <div class="footer-content">
+                  <div class="rolunk">
+                      <div class="footer-title">
+                          <h2>Rólunk</h2>
+                          <p>Magyarország legprémiumabb cipőboltja ami 100% ban eredeti sneakereket forgalmaz.</p>
+                      </div>
+                  </div>
+                  <div class="kovess">
+                      <div class="footer-title">
+                          <h2>Kövess minket!</h2>
+                          <div class="footer-social">
+                              <a href="https://www.instagram.com/vendlerakos/"><i id="social" class="fa-brands fa-instagram"></i></a>
+                              <a href="https://www.instagram.com/k_szebi2/"><i id="social" class="fa-brands fa-instagram"></i></a>
+                              <a href="https://www.facebook.com/akos.vendler"><i id="social" class="fa-brands fa-facebook"></i></a>
+                              <a href="https://www.facebook.com/profile.php?id=100083207892324"><i id="social" class="fa-brands fa-facebook"></i></a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </footer>
+    <script src="./jordan.js"></script>
 </body>
 </html>
