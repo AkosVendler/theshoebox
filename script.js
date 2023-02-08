@@ -98,3 +98,37 @@ function töröl(key) {
     location.reload();
 }
 
+
+function noi() {
+    var x = document.getElementById("noi");
+    if (x.style.display === "none") {
+    x.style.display = "inline-block";
+    } else {
+        x.style.display = "none";
+}
+}
+function ferfi() {
+    var x = document.getElementById("ferfi");
+    if (x.style.display === "none") {
+    x.style.display = "inline-block";
+    } else {
+        x.style.display = "none";
+}
+}
+
+function ferfi() {
+    var x = document.getElementById("ferfi");
+    if (x.style.display === "none") {
+    x.style.display = "inline-block";
+    } else {
+        x.style.display = "none";
+}
+}
+function filter() {
+    var x = document.getElementById("box");
+    if (x.style.display === "none") {
+    x.style.display = "flex"; 
+    } else {
+        x.style.display = "none";
+}
+}
